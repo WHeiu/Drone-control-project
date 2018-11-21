@@ -1,0 +1,13 @@
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\stm32L\eMPL_outputs.c
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\stm32L\eMPL_outputs.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\mltypes.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\stdint_invensense.h
+stm32_new\empl_outputs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32_new\empl_outputs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\errno.h
+stm32_new\empl_outputs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\ml_math_func.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\mlmath.h
+stm32_new\empl_outputs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\start_manager.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\data_builder.h
+stm32_new\empl_outputs.o: ..\Src\DMP\driver\include\results_holder.h

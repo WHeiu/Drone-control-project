@@ -1,0 +1,14 @@
+..\output\spi_nrf.o: SPI_NRF.c
+..\output\spi_nrf.o: SPI_NRF.h
+..\output\spi_nrf.o: ..\CMSIS\stm32f10x.h
+..\output\spi_nrf.o: ..\CMSIS\core_cm3.h
+..\output\spi_nrf.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\spi_nrf.o: ..\CMSIS\system_stm32f10x.h
+..\output\spi_nrf.o: ..\USER\stm32f10x_conf.h
+..\output\spi_nrf.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\output\spi_nrf.o: ..\CMSIS\stm32f10x.h
+..\output\spi_nrf.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\output\spi_nrf.o: ..\FWlib\inc\stm32f10x_spi.h
+..\output\spi_nrf.o: ..\FWlib\inc\stm32f10x_usart.h
+..\output\spi_nrf.o: usart1.h
+..\output\spi_nrf.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

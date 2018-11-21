@@ -1,0 +1,1 @@
+1、设备地址的LSB区分在read(1)和write(0)操作之间，对应于地址0xEF(read)和0xEE(写)。

@@ -1,0 +1,12 @@
+..\output\myspi.o: SPI\myspi.c
+..\output\myspi.o: SPI\myspi.h
+..\output\myspi.o: ..\CMSIS\stm32f10x.h
+..\output\myspi.o: ..\CMSIS\core_cm3.h
+..\output\myspi.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\myspi.o: ..\CMSIS\system_stm32f10x.h
+..\output\myspi.o: ..\USER\stm32f10x_conf.h
+..\output\myspi.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\output\myspi.o: ..\CMSIS\stm32f10x.h
+..\output\myspi.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\output\myspi.o: ..\FWlib\inc\stm32f10x_spi.h
+..\output\myspi.o: ..\FWlib\inc\stm32f10x_usart.h

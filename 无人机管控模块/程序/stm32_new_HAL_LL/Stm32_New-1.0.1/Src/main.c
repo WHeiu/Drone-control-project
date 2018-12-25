@@ -476,7 +476,7 @@ int main(void)
   /* USER CODE BEGIN 3 */
 		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_2);
 
-#if 0
+#if 1
 #if 1
 		//MP9250
 		printf("-------------------------------\r\n");
@@ -490,33 +490,33 @@ int main(void)
 		printf("Accel: x:%d \ty:%d\tz:%d  \r\n", mpu_value.Accel[0],mpu_value.Accel[1],mpu_value.Accel[2]);   //加速度
 		printf("-------------------------------\r\n\r\n\r\n");
 #endif 
-		//Bmp280
-		bmp_data.v_actual_temp_float = BMP280_ReadTemperature();
-		bmp_data.actual_press_u64 = BMP280_ReadPressure_int64();
-		bmp_data.v_actual_press_float = BMP280_ReadPressure();
+//		//Bmp280
+//		bmp_data.v_actual_temp_float = BMP280_ReadTemperature();
+//		bmp_data.actual_press_u64 = BMP280_ReadPressure_int64();
+//		bmp_data.v_actual_press_float = BMP280_ReadPressure();
 
-		printf("-------------------------------\r\n");
-	
-		printf("BMP280 \r\n");
-		printf("  T32: %u ℃  \r\n", bmp_data.v_actual_temp_s32);   //直接读的温度值32位
-		printf("  P32: %u Pa  \r\n", bmp_data.v_actual_press_u32);   //直接读的气压值32位
-		printf("  P64: %.3f KPa \r\n", ((float)bmp_data.actual_press_u64 / 256.0f)/1000);   //将气压转换为64位
-   	printf("  Tf: %.3f ℃\r\n", bmp_data.v_actual_temp_float);    //将温度转换为浮点型
-		printf("  Pf: %.3f KPa  \r\n", bmp_data.v_actual_press_float/1000);   //将气压转换为浮点型
+//		printf("-------------------------------\r\n");
+//	
+//		printf("BMP280 \r\n");
+//		printf("  T32: %u ℃  \r\n", bmp_data.v_actual_temp_s32);   //直接读的温度值32位
+//		printf("  P32: %u Pa  \r\n", bmp_data.v_actual_press_u32);   //直接读的气压值32位
+//		printf("  P64: %.3f KPa \r\n", ((float)bmp_data.actual_press_u64 / 256.0f)/1000);   //将气压转换为64位
+//   	printf("  Tf: %.3f ℃\r\n", bmp_data.v_actual_temp_float);    //将温度转换为浮点型
+//		printf("  Pf: %.3f KPa  \r\n", bmp_data.v_actual_press_float/1000);   //将气压转换为浮点型
 
-		float altitude2,altitude ,seaLevelhPa, mmHg;
-		mmHg = bmp_data.v_actual_press_float / 133.321995f;   // 同为压强
-		printf("  %.2f mmHg \r\n", mmHg);         
+//		float altitude2,altitude ,seaLevelhPa, mmHg;
+//		mmHg = bmp_data.v_actual_press_float / 133.321995f;   // 同为压强
+//		printf("  %.2f mmHg \r\n", mmHg);         
 
-		seaLevelhPa = 101325.0f;     //标准大气压
-	  altitude2 = (1013.25-((bmp_data.v_actual_press_float)/100))*9;   //测试点海拔高度
-	  altitude = altitude2-altitude1;     //相对高度
-	  //altitude = 44330 * (1.0 - pow((double)(bmp_data.v_actual_press_float / seaLevelhPa), 0.19029)); //pow函数？
-		printf( "  %.2f m  \r\n", altitude);   //高度
-   
+//		seaLevelhPa = 101325.0f;     //标准大气压
+//	  altitude2 = (1013.25-((bmp_data.v_actual_press_float)/100))*9;   //测试点海拔高度
+//	  altitude = altitude2-altitude1;     //相对高度
+//	  //altitude = 44330 * (1.0 - pow((double)(bmp_data.v_actual_press_float / seaLevelhPa), 0.19029)); //pow函数？
+//		printf( "  %.2f m  \r\n", altitude);   //高度
+//   
 
-		printf("  nerror: %u \r\n", bmp_data.err_cnt);
-  	printf("-------------------------------\r\n\r\n");  
+//		printf("  nerror: %u \r\n", bmp_data.err_cnt);
+//  	printf("-------------------------------\r\n\r\n");  
 		
 #endif
 #if 0
@@ -766,8 +766,8 @@ int main(void)
 	
 #endif
 #endif
-		EC20_Transmit((uint8_t*)UART4_Tx_GPS_TEST0); 
-		EC20_Receive();
+//		EC20_Transmit((uint8_t*)UART4_Tx_GPS_TEST0); 
+//		EC20_Receive();
 // HAL_Delay(3000);
   }
 	

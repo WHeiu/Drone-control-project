@@ -310,10 +310,13 @@ void EC20Send_RecAccessMode(void)
 			Re_strx=strstr((const char*)UART4_ReceiveBuff,(const char*)"0x10");  //发送GPS定位数据包
 			if(Re_strx)
 			{		
+				while(1)
+				{
 				EC20Send_ChangeMode(1);    //切换模式为命令模式，因为透传模式冲突，产生的问题未知
 			 	EC20_GetGps_Send();  //获取GPS数据包并发送
 				EC20Send_ChangeMode(0);
 				UART4_CLR_RecvBuf();
+				}
       }
 		Re_strx=strstr((const char*)UART4_ReceiveBuff,(const char*)"0x13");  //状态包
 			if(Re_strx)

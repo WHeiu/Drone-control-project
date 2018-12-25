@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
 Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
-E:\Work\EC20\stm32_new_HL_1\stm32_new-10-19 - 副本\MDK-ARM\stm32_new.uvprojx
+E:\Work\EC20\无人机管控模块\无人机管控模块\程序\stm32_new_HAL_LL\Stm32_New-1.0.1\MDK-ARM\stm32_new.uvprojx
 Project File Date:  10/17/2018
 
 <h2>Output:</h2>
@@ -58,6 +58,8 @@ compiling main.c...
   	uint8_t UART4_Tx_TEST6[]="AT+CMGS=\"13036699696\"\r\n";
 ../Src/main.c(328): warning:  #177-D: variable "UART4_Tx_TEST7"  was declared but never referenced
   	uint8_t UART4_Tx_TEST7[]="AT+CMEE=2\r\n";
+../Src/main.c(330): warning:  #177-D: variable "UART4_Tx_GPS_TEST0"  was declared but never referenced
+  	uint8_t UART4_Tx_GPS_TEST0[]="ATI\r\n";
 ../Src/main.c(331): warning:  #177-D: variable "UART4_Tx_GPS_TEST1"  was declared but never referenced
   	uint8_t UART4_Tx_GPS_TEST1[]="AT+QGPS=1\r\n";
 ../Src/main.c(332): warning:  #177-D: variable "UART4_Tx_GPS_TEST2"  was declared but never referenced
@@ -128,11 +130,11 @@ compiling main.c...
   static void MX_ADC1_Init(void)
 ../Src/main.c(1132): warning:  #177-D: function "MX_USB_OTG_FS_HCD_Init"  was declared but never referenced
   static void MX_USB_OTG_FS_HCD_Init(void)
-../Src/main.c: 50 warnings, 0 errors
+../Src/main.c: 51 warnings, 0 errors
 linking...
-Program Size: Code=14004 RO-data=496 RW-data=316 ZI-data=2396  
+Program Size: Code=15752 RO-data=496 RW-data=324 ZI-data=2412  
 FromELF: creating hex file...
-"stm32_new\stm32_new.axf" - 0 Error(s), 50 Warning(s).
+"stm32_new\stm32_new.axf" - 0 Error(s), 51 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -155,7 +157,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.2
-Build Time Elapsed:  00:00:14
+Build Time Elapsed:  00:00:16
 </pre>
 </body>
 </html>
